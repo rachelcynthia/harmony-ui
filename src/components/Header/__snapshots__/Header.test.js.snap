@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<nav>
+  <div
+    className="left-links"
+  >
+    <img
+      alt="Logo"
+      height="50"
+      src="test-file-stub"
+      width="50"
+    />
+  </div>
+  <div
+    className="centered-links"
+  >
+    <a
+      className="links"
+    >
+      Harmony
+    </a>
+  </div>
+  <div
+    className="right-links"
+    style={
+      Object {
+        "width": "50px",
+      }
+    }
+  />
+</nav>
+`;

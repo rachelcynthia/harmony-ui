@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="login_container"
+>
+  <div
+    className="login_component"
+  >
+    <div
+      className="login_header"
+    >
+      Please login to continue
+    </div>
+    <div
+      className="login_body"
+    >
+      <input
+        className="input_text"
+        placeholder="Enter email"
+        type="text"
+      />
+      <input
+        className="input_text"
+        placeholder="Enter password"
+        type="password"
+      />
+      <input
+        className="input_button"
+        onClick={true}
+        type="button"
+        value="LOGIN"
+      />
+    </div>
+    <div
+      className="register_component"
+    >
+      New to Harmony? 
+      <a
+        className="register_button"
+        href="#"
+      >
+        Register
+      </a>
+    </div>
+  </div>
+</div>
+`;

@@ -2,12 +2,13 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Login from './components/Login/Login';
+import Register from './components/Register/Register';
 
 function App() {
+  const isLoggedIn = false;
   return (
     <>
-      <Header isLoggedIn={false}/>
-      <Login isLoggedIn={false} />
+      {isLoggedIn === false ? <Login /> : <Register /> }
     </>
   );
 }

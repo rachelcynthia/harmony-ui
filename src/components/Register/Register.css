@@ -1,0 +1,44 @@
+.register_container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: transparent;
+    background: rgb(255, 255, 255);
+    margin-top: 60px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(203, 108, 230, 1) 44%, rgba(207, 118, 232, 1) 50%, rgba(255, 255, 255, 1) 100%);
+}
+
+.register_component {
+    margin: auto;
+    height: 700px;
+    width: 500px;
+    background-color: black;
+    color: aliceblue;
+    border: 5px solid #cb6ce6;
+    border-radius: 20px;
+}
+
+.register_header {
+    text-align: center;
+    font-family: Apple Chancery, cursive;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    padding: 10px 0px;
+    border-bottom: 5px solid #cb6ce6;
+}
+
+.register_body {
+    margin-top: 50px;
+    row-gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile {
+    margin-left: 50px;
+}

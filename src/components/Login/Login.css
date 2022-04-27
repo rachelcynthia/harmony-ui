@@ -5,8 +5,6 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: transparent;
-    background: rgb(255, 255, 255);
     margin-top: 60px;
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(203, 108, 230, 1) 44%, rgba(207, 118, 232, 1) 50%, rgba(255, 255, 255, 1) 100%);
 }
@@ -31,7 +29,7 @@
 }
 
 .login_body {
-    margin-top: 120px;
+    margin-top: 30px;
     row-gap: 30px;
     display: flex;
     flex-direction: column;
@@ -52,12 +50,14 @@
     transition: 0.5s;
     outline: none; */
 }
+
 .input_text:focus {
     border-color: rgba(203, 108, 230, 0.78);
     border-width: 2.5px;
     border-style: solid;
     outline: none !important;
 }
+
 .input_button {
     cursor: pointer;
     width: 60%;
@@ -71,16 +71,21 @@
 }
 
 .input_button:focus {
-    background-color:rgba(203, 108, 230, 0.78);
-    border: none;
+    border-color: rgba(203, 108, 230, 0.78);
+    border-width: 2.5px;
+    border-style: solid;
     outline: none !important;
 }
 
-.register_component {
+.reg_component {
     font-family: DejaVu Sans Mono, monospace;
     font-size: 18px;
     margin-top: 30px;
     text-align: center;
+}
+
+.register_link {
+    color: #cb6ce6;
 }
 
 .register_button {

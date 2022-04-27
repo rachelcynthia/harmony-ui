@@ -1,0 +1,6 @@
+.dashboard_container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(203, 108, 230, 0.3);
+}

@@ -1,6 +1,105 @@
 .dashboard_container {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(203, 108, 230, 0.3);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: transparent;
+    background: rgb(255, 255, 255);
+    margin-top: 60px;
+}
+
+.flex-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+.profile-container {
+    /* width: 30%; */
+    /* height: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: wheat;
+    height: fit-content;
+}
+
+.profile-item-container {
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.profile-item-header {
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.profile-item-body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.profile-logo {
+    padding-left: 45%;
+    padding-top: 20px;
+}
+
+.new-blog-button {
+    background-color: wheat;
+    /* border: none; */
+    border-radius: 10px;
+    border-color: black;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.new-blog-button img {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.new-blog-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px;
+    background-color: antiquewhite;
+    align-items: center;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.new-blog-body {
+    margin-left: 20px;
+}
+
+.blogs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.blog-container-header {
+    font-family: DejaVu Sans Mono, monospace;
+    font-size: 28px;
+}
+
+.no-blogs-container {
+    margin-top: 20px;
+}
+
+.all-blogs-container{
+    background-color: aliceblue;
+}
+
+.recent-blogs-container {
+    margin-top: 20px;
+    margin-left: 10px;
 }

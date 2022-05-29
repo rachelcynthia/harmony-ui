@@ -42,3 +42,21 @@
 #profile {
     margin-left: 50px;
 }
+
+.log_component{
+    font-family: DejaVu Sans Mono, monospace;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.login_link{
+    vertical-align: middle;
+    color: #cb6ce6;
+}
+
+.login-left-arrow{
+    padding-right: 5px;
+}

@@ -6,6 +6,22 @@ import logo from '../../assets/logo.png'
 
 const Login = () => {
     const handleSubmit = () => {
+        // const user = `http://localhost:8080/blog/all`;
+        fetch('http://localhost:8080/blog/all')
+        .then(async response => {
+            const data = await response.json();
+
+            // check for error response
+            if (!response.ok) {
+                // get error message from body or default to response statusText
+                return Promise.reject(data);
+            }
+
+           console.log(data)
+        })
+        .catch(error => {
+            console.error('There was an error!', error);
+        });
         return true;
     }
     return (

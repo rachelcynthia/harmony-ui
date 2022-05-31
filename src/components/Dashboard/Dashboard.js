@@ -14,11 +14,15 @@ const userData = {
     favourites: []
 }
 
-const blogData = [{
-    title: "Title",
-    publishedDate: "01-01-2020",
-    authorName: "John Doe",
-}]
+// const blogData = [{
+//     card: {
+//         title: "Title",
+//         publishedDate: "01-01-2020",
+//         authorName: "John Doe",
+//     }
+// }]
+
+const blogData =[]
 
 
 const Dashboard = () => {
@@ -28,7 +32,7 @@ const Dashboard = () => {
         const height = document.getElementById('profile-con').clientHeight;
         setProfileHeight(height);
     })
-    
+
     const ref = useRef(null)
     const { height, width } = useWindowDimensions();
     // console.log("dimensions", height, width);
@@ -60,7 +64,6 @@ const Dashboard = () => {
 
     return (
         <>
-            {console.log(document.getElementById('profile-con'))}
             <Header isLoggedIn={true} />
             <div className="dashboard_container">
                 <div className="flex-container">
@@ -121,7 +124,7 @@ const Dashboard = () => {
                                     <div className="no-blogs-container">
                                         <h4>No blogs yet!</h4>
                                     </div> :
-                                    <Blog data={userData.blogs} />
+                                    <Blog cards={userData.blogs} />
                                 }
                             </div>
                             <div className="user-favourites-container">
@@ -132,7 +135,7 @@ const Dashboard = () => {
                                     <div className="no-blogs-container">
                                         <h4>No blogs yet!</h4>
                                     </div> :
-                                    <Blog data={userData.favourites} />
+                                    <Blog cards={userData.favourites} />
                                 }
                             </div>
                         </div>
@@ -146,7 +149,7 @@ const Dashboard = () => {
                         <div className="no-blogs-container">
                             <h4>No blogs yet!</h4>
                         </div> :
-                        <Blog data={userData.favourites} />
+                        <Blog cards={blogData} />
                     }
                     {/* {error? <div className="error">An error occurred</div> :
                         <div className="blogs-list">{}</div>
@@ -154,7 +157,6 @@ const Dashboard = () => {
 
                 </div>
             </div>
-            {console.log(document.getElementById('profile-con'))}
         </>
     )
 }
